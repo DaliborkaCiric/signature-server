@@ -29,13 +29,13 @@ app.post('/email-page', function(req, res) {
     var transporter = nodemailer.createTransport({
         service: 'gmail',
         auth: {
-            user: 'bukica1989@gmail.com',
+            user: 'daliborka.ciric@propulsionapp.com',
             pass: 'yvdv217w'
         }
     });
 
     var mailOptions = {
-        from: 'bukica1989@gmail.com',
+        from: 'daliborka.ciric@propulsionapp.com',
         to: req.body.email,
         subject: 'Medidata signature',
         text: req.body.img
